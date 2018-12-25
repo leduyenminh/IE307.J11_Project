@@ -27,7 +27,7 @@
 
                 </StackLayout>
                 <Button Text="Phát sinh" HorizontalOptions="FillAndExpand" BackgroundColor="#2196F3" TextColor="White" Clicked="btn_taobarcode_Clicked"/>
-                <Button Text="Lưu barcode" HorizontalOptions="FillAndExpand" BackgroundColor="#2196F3" TextColor="White" Clicked="btn_luubarcode_Clicked"/>
+                
                 <Button x:Name="btnScanDefault" Text="THÊM"/>
 
             </StackLayout>
