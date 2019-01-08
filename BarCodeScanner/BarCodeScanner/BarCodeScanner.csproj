@@ -48,12 +48,6 @@
     <Reference Include="SQLite.Net, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\SQLite.Net-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
     </Reference>
-    <Reference Include="System.Drawing.Common">
-      <HintPath>..\..\packages\System.Drawing.Common.4.5.1\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Drawing.Primitives">
-      <HintPath>..\..\packages\System.Drawing.Primitives.4.3.0\ref\net45\System.Drawing.Primitives.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\..\packages\Xamarin.Forms.3.4.0.1008975\lib\netstandard1.0\Xamarin.Forms.Core.dll</HintPath>
     </Reference>
