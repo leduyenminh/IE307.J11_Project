@@ -19,7 +19,7 @@
             Orientation="Horizontal"
             HorizontalOptions="Center">
                     <Label Text="Mã barcode: "/>
-                    <Label x:Name="lbl_MaBarcode" />
+                    
 
                     <Image x:Name="img_barcode" HorizontalOptions="Center" WidthRequest="300" HeightRequest="130"/>
                     
