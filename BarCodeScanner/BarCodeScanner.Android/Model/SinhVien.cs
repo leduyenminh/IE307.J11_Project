@@ -10,16 +10,23 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SQLite;
-using SQLite.Net.Attributes;
 
 namespace BarCodeScanner.Droid.Model
 {
     public class SinhVien
     {
-        [PrimaryKey,AutoIncrement]
-        public int mssv;
-        public String hoten;
-        public String lop;
-        public String barcode;
+        [PrimaryKey, AutoIncrement]
+        public string Mssv { get; set; }
+        public string Tensv { get; set; }
+        public string Lop { get; set; }
+        public string Barcodevalue { get; set; }
+        public SinhVien() { }
+        public SinhVien(string mssv, string tensv, string lop)
+        {
+            Mssv = mssv;
+            Tensv = tensv;
+            Lop = lop;
+            Barcodevalue = mssv + "_" + tensv + "_" + lop;
+        }
     }
 }

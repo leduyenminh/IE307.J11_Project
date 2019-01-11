@@ -26,10 +26,6 @@ namespace BarCodeScanner.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::PCLStorage.Resource.String.ApplicationName = global::BarCodeScanner.Droid.Resource.String.ApplicationName;
-			global::PCLStorage.Resource.String.Hello = global::BarCodeScanner.Droid.Resource.String.Hello;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::BarCodeScanner.Droid.Resource.String.ApplicationName;
-			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::BarCodeScanner.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::BarCodeScanner.Droid.Resource.Attribute.actionBarSize;
 			global::ZXing.Net.Mobile.Forms.Android.Resource.Layout.zxingscanneractivitylayout = global::BarCodeScanner.Droid.Resource.Layout.zxingscanneractivitylayout;
 			global::ZXing.Net.Mobile.Forms.Android.Resource.Layout.zxingscannerfragmentlayout = global::BarCodeScanner.Droid.Resource.Layout.zxingscannerfragmentlayout;
@@ -3949,12 +3945,6 @@ namespace BarCodeScanner.Droid
 		
 		public partial class String
 		{
-			
-			// aapt resource value: 0x7f07003e
-			public const int ApplicationName = 2131165246;
-			
-			// aapt resource value: 0x7f07003d
-			public const int Hello = 2131165245;
 			
 			// aapt resource value: 0x7f070016
 			public const int abc_action_bar_home_description = 2131165206;

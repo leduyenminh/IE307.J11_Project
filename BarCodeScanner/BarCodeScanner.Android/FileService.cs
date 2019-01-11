@@ -3,8 +3,7 @@ using System.IO;
 
 
 using BarCodeScanner.Droid.Interface;
-using System.Security.Permissions;
-using System;
+
 using Android.Content;
 using Xamarin.Forms;
 
@@ -40,7 +39,7 @@ namespace BarCodeScanner.Droid
                 }
                 int length = bArray.Length;
                 fs.Write(bArray, 0, length);
-
+                
             }
             //System.IO.File.WriteAllBytes(filePath, bArray);
             //mediascan adds the saved image into the gallery

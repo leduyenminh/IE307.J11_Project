@@ -1,20 +1,13 @@
 ﻿using System;
-
 using System.IO;
-
-
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ZXing;
-
 using ZXing.Mobile;
-
 using Android.Graphics;
-
 using ZXing.QrCode;
-
 using BarCodeScanner.Droid.Interface;
+using BarCodeScanner.Models;
 
 namespace BarCodeScanner
 {
@@ -22,14 +15,12 @@ namespace BarCodeScanner
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MH_ThemThongTinSinhVien : ContentPage
     {
-       
         public MH_ThemThongTinSinhVien()
         {
             InitializeComponent();
             
         }
-
-        
+    
         public void btn_taobarcode_Clicked(object sender, EventArgs e)
         {
             try
@@ -89,6 +80,10 @@ namespace BarCodeScanner
              }
             return null;
         }
-
+        public void btn_themsv_Clicked(object sender, EventArgs e)
+        {
+            Database db = new Database();
+            db.InsertSinhVien(new Droid.Model.SinhVien(txt_mssv.Text, txt_hoten.Text, txt_lop.Text)); 
+        }
     }
 }

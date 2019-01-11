@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmode="clr-namespace:BarCodeScanner.Droid.ViewModel"
+             x:Class="BarCodeScanner.MH_DanhSachSinhVien">
+    <ContentPage.BindingContext>
+        <viewmode:SinhVienViewModel/>
+    </ContentPage.BindingContext>
+  <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+            </Grid.ColumnDefinitions>
+       
+        <ListView x:Name="lstsinhvien" VerticalOptions="Center"
+                ItemsSource="{Binding SinhVienList}" SelectedItem="{Binding SinhVien, Mode=TwoWay}"
+                Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Mssv, Mode=TwoWay}" Detail="{Binding Tensv, Mode=TwoWay}"/>
+                        
+                    </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

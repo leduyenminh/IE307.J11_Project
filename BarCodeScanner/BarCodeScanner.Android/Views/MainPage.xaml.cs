@@ -1,13 +1,16 @@
-﻿using System;
+﻿using BarCodeScanner.Droid.Views;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 using ZXing;
 
 namespace BarCodeScanner
 {
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : ContentPage
     {
         public MainPage()
@@ -26,7 +29,7 @@ namespace BarCodeScanner
         //}
         private void btn_DanhSachSinhVien_Clicked(object sender, EventArgs e)
         {
-
+            //Navigation.PushModalAsync(new MH_DanhSachSinhVien());
         }
 
         private void btn_ThemSinhVien_Clicked(object sender, EventArgs e)
